@@ -144,7 +144,7 @@ button.register {
 
 }
 
-button.delete-button {
+.delete {
 	background-color: #4b4d4b;
 	color: white;
 	border: none;
@@ -163,7 +163,8 @@ button.back-btn {
 }
 
 button.register:hover,
-button.back-btn:hover {
+button.back-btn:hover,
+button.delete:hover {
 	opacity: 0.9;
 }
 

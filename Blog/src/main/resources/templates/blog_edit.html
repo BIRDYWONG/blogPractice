@@ -74,13 +74,12 @@
 					<div class="register-section-details_flex">
 						<input type="hidden" name="blogId" th:value="${blogs.blogId}">
 						<button class="register" type="submit">更新</button>
-						<!--   <button class="delete-button" onclick="handleDelete();" type="submit">削除</button>-->
 					</div>
 				</form>
 				<form th:action="@{/blog/delete}" method="post">
 					<div class="register-section-details_flex">
 						<input type="hidden" name="blogId" th:value="${blogs.blogId}">
-						<button class="register">削除</button>
+						<button class="delete">削除</button>
 					</div>
 				</form>
 
