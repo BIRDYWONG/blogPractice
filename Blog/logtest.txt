@@ -1,0 +1,171 @@
+2024-05-16T15:09:24.999+09:00  INFO 19060 --- [Blog] [main] blog.com.BlogApplication                 : Starting BlogApplication using Java 17.0.11 with PID 19060 (C:\Users\Easonzz.com\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\Blog\target\classes started by Easonzz.com in C:\Users\Easonzz.com\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\Blog)
+2024-05-16T15:09:25.017+09:00  INFO 19060 --- [Blog] [main] blog.com.BlogApplication                 : No active profile set, falling back to 1 default profile: "default"
+2024-05-16T15:09:27.451+09:00  INFO 19060 --- [Blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-16T15:09:27.534+09:00  INFO 19060 --- [Blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 0 JPA repository interfaces.
+2024-05-16T15:09:29.454+09:00  INFO 19060 --- [Blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-16T15:09:29.500+09:00  INFO 19060 --- [Blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-16T15:09:29.501+09:00  INFO 19060 --- [Blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-16T15:09:29.828+09:00  INFO 19060 --- [Blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-16T15:09:29.831+09:00  INFO 19060 --- [Blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4576 ms
+2024-05-16T15:09:30.504+09:00  INFO 19060 --- [Blog] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-16T15:09:30.802+09:00  INFO 19060 --- [Blog] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-16T15:09:30.955+09:00  INFO 19060 --- [Blog] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-16T15:09:32.078+09:00  INFO 19060 --- [Blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-16T15:09:32.215+09:00  INFO 19060 --- [Blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-16T15:09:32.794+09:00  INFO 19060 --- [Blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4586a8aa
+2024-05-16T15:09:32.800+09:00  INFO 19060 --- [Blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-16T15:09:32.942+09:00  WARN 19060 --- [Blog] [main] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-05-16T15:09:32.971+09:00  WARN 19060 --- [Blog] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-16T15:09:36.920+09:00  INFO 19060 --- [Blog] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-16T15:09:37.102+09:00 DEBUG 19060 --- [Blog] [main] org.hibernate.SQL                        : 
+    alter table if exists blog 
+       add column account_id bigint not null
+2024-05-16T15:09:37.109+09:00 DEBUG 19060 --- [Blog] [main] org.hibernate.SQL                        : 
+    alter table if exists blog 
+       add column account_email varchar(255)
+2024-05-16T15:09:37.112+09:00 DEBUG 19060 --- [Blog] [main] org.hibernate.SQL                        : 
+    alter table if exists blog 
+       add column account_name varchar(255)
+2024-05-16T15:09:37.115+09:00 DEBUG 19060 --- [Blog] [main] org.hibernate.SQL                        : 
+    alter table if exists blog 
+       add column password varchar(255)
+2024-05-16T15:09:37.126+09:00 DEBUG 19060 --- [Blog] [main] org.hibernate.SQL                        : 
+    create sequence blog_seq start with 1 increment by 50
+2024-05-16T15:09:37.146+09:00  INFO 19060 --- [Blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-16T15:09:37.171+09:00  WARN 19060 --- [Blog] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountRegisterController' defined in file [C:\Users\Easonzz.com\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\Blog\target\classes\blog\com\controllers\AccountRegisterController.class]: Failed to instantiate [blog.com.controllers.AccountRegisterController]: Constructor threw exception
+2024-05-16T15:09:37.172+09:00  INFO 19060 --- [Blog] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-16T15:09:37.182+09:00  INFO 19060 --- [Blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-16T15:09:37.198+09:00  INFO 19060 --- [Blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-16T15:09:37.203+09:00  INFO 19060 --- [Blog] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-16T15:09:37.282+09:00  INFO 19060 --- [Blog] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-16T15:09:37.357+09:00 ERROR 19060 --- [Blog] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountRegisterController' defined in file [C:\Users\Easonzz.com\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\Blog\target\classes\blog\com\controllers\AccountRegisterController.class]: Failed to instantiate [blog.com.controllers.AccountRegisterController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1317) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1202) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at blog.com.BlogApplication.main(BlogApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [blog.com.controllers.AccountRegisterController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1311) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 17 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	AccountService cannot be resolved to a type
+	Logger cannot be resolved to a type
+	LoggerFactory cannot be resolved
+	AdminRegisterController cannot be resolved to a type
+	adminService cannot be resolved
+	Syntax error on token "}", delete this token
+
+	at blog.com.controllers.AccountRegisterController.<init>(AccountRegisterController.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 19 common frames omitted
+
+2024-05-16T15:13:05.044+09:00  INFO 5596 --- [Blog] [main] blog.com.BlogApplication                 : Starting BlogApplication using Java 17.0.11 with PID 5596 (C:\Users\Easonzz.com\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\Blog\target\classes started by Easonzz.com in C:\Users\Easonzz.com\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\Blog)
+2024-05-16T15:13:05.053+09:00  INFO 5596 --- [Blog] [main] blog.com.BlogApplication                 : No active profile set, falling back to 1 default profile: "default"
+2024-05-16T15:13:07.241+09:00  INFO 5596 --- [Blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-16T15:13:07.318+09:00  INFO 5596 --- [Blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 0 JPA repository interfaces.
+2024-05-16T15:13:09.043+09:00  INFO 5596 --- [Blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-16T15:13:09.095+09:00  INFO 5596 --- [Blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-16T15:13:09.096+09:00  INFO 5596 --- [Blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-16T15:13:09.376+09:00  INFO 5596 --- [Blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-16T15:13:09.378+09:00  INFO 5596 --- [Blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4130 ms
+2024-05-16T15:13:09.971+09:00  INFO 5596 --- [Blog] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-16T15:13:10.222+09:00  INFO 5596 --- [Blog] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-16T15:13:10.393+09:00  INFO 5596 --- [Blog] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-16T15:13:11.267+09:00  INFO 5596 --- [Blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-16T15:13:11.384+09:00  INFO 5596 --- [Blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-16T15:13:11.888+09:00  INFO 5596 --- [Blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c9e8a67
+2024-05-16T15:13:11.894+09:00  INFO 5596 --- [Blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-16T15:13:12.014+09:00  WARN 5596 --- [Blog] [main] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-05-16T15:13:12.053+09:00  WARN 5596 --- [Blog] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-16T15:13:15.374+09:00  INFO 5596 --- [Blog] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-16T15:13:16.213+09:00 DEBUG 5596 --- [Blog] [main] org.hibernate.SQL                        : 
+    create sequence account_seq start with 1 increment by 50
+2024-05-16T15:13:16.292+09:00  INFO 5596 --- [Blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-16T15:13:17.070+09:00  WARN 5596 --- [Blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-16T15:13:24.663+09:00  WARN 5596 --- [Blog] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-05-16T15:13:24.709+09:00  INFO 5596 --- [Blog] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-16T15:13:24.744+09:00  INFO 5596 --- [Blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-16T15:13:24.822+09:00  INFO 5596 --- [Blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-16T15:13:25.315+09:00  INFO 5596 --- [Blog] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-16T15:13:25.599+09:00 ERROR 5596 --- [Blog] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-05-16T15:16:20.298+09:00  INFO 12564 --- [Blog] [main] blog.com.BlogApplication                 : Starting BlogApplication using Java 17.0.11 with PID 12564 (C:\Users\Easonzz.com\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\Blog\target\classes started by Easonzz.com in C:\Users\Easonzz.com\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\Blog)
+2024-05-16T15:16:20.305+09:00  INFO 12564 --- [Blog] [main] blog.com.BlogApplication                 : No active profile set, falling back to 1 default profile: "default"
+2024-05-16T15:16:22.404+09:00  INFO 12564 --- [Blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-16T15:16:22.481+09:00  INFO 12564 --- [Blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 0 JPA repository interfaces.
+2024-05-16T15:16:23.973+09:00  INFO 12564 --- [Blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-16T15:16:24.020+09:00  INFO 12564 --- [Blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-16T15:16:24.021+09:00  INFO 12564 --- [Blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-16T15:16:24.317+09:00  INFO 12564 --- [Blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-16T15:16:24.319+09:00  INFO 12564 --- [Blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3857 ms
+2024-05-16T15:16:24.769+09:00  INFO 12564 --- [Blog] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-16T15:16:24.965+09:00  INFO 12564 --- [Blog] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-16T15:16:25.083+09:00  INFO 12564 --- [Blog] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-16T15:16:25.781+09:00  INFO 12564 --- [Blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-16T15:16:25.871+09:00  INFO 12564 --- [Blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-16T15:16:26.278+09:00  INFO 12564 --- [Blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@71dd4624
+2024-05-16T15:16:26.283+09:00  INFO 12564 --- [Blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-16T15:16:26.378+09:00  WARN 12564 --- [Blog] [main] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-05-16T15:16:26.405+09:00  WARN 12564 --- [Blog] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-16T15:16:29.148+09:00  INFO 12564 --- [Blog] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-16T15:16:29.269+09:00  INFO 12564 --- [Blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-16T15:16:29.385+09:00  WARN 12564 --- [Blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-16T15:16:30.508+09:00  WARN 12564 --- [Blog] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-05-16T15:16:30.514+09:00  INFO 12564 --- [Blog] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-16T15:16:30.519+09:00  INFO 12564 --- [Blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-16T15:16:30.536+09:00  INFO 12564 --- [Blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-16T15:16:30.603+09:00  INFO 12564 --- [Blog] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-16T15:16:30.678+09:00 ERROR 12564 --- [Blog] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+

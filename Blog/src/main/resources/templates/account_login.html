@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" th:href="@{/css/reset.css}">
+	<link rel="stylesheet" th:href="@{/css/login.css}">
+
+</head>
+
+<body>
+	<header>
+		<div class="pc-logo">
+			<a href=""><img th:src="@{/images/blog.png}" alt=""></a>
+		</div>
+	</header>
+	<section class="login">
+
+		<h1>Welcome</h1>
+		<form class="login-form" th:action="@{/account/login/process}" method="post">
+			<div class="control-group">
+				<label class="register-field-icon" for="login-email">Email</label>
+				<input type="text" class="login-field" value="" placeholder="メールアドレスを入力してください" id="login-email"
+					name="accountEmail">
+			</div>
+			<div class="control-group">
+				<label class="register-field-icon" for="login-pass">Password</label>
+				<input type="password" class="login-field" value="" placeholder="パスワードを入力してください" id="login-pass"
+					name="password">
+			</div>
+			<div class="control-group">
+				<button class="btn">ログイン</button>
+			</div>
+			<div class="control-group link">
+				<a th:href="@{/account/register}" target="_blank">新規登録はこちら</a>
+			</div>
+		</form>
+	</section>
+</body>
+
+</html>

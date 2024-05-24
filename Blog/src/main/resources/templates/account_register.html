@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" th:href="@{/css/reset.css}">
+	<link rel="stylesheet" th:href="@{/css/login.css}">
+
+</head>
+
+<body>
+	<header>
+		<div class="pc-logo">
+			<a href=""><img th:src="@{/images/blog.png}" alt=""></a>
+		</div>
+	</header>
+	<section class="register">
+		<!-- <nav class="pc">
+            <div class="pc-inner"> -->
+
+		<h1>Register</h1>
+		<form class="register-form" th:action="@{/account/register/process}" method="post">
+			<div class="control-group">
+				<label class="register-field-icon" for="login-username">Username</label>
+				<input type="text" class="login-field" value="" placeholder="ユーザー名" id="login-name" name="accountName">
+			</div>
+			<div class="control-group">
+				<label class="register-field-icon" for="login-email">Email</label>
+				<input type="text" class="login-field" value="" placeholder="メールアドレス" id="login-email"
+					name="accountEmail">
+			</div>
+			<div class="control-group">
+				<label class="register-field-icon" for="login-pass">Password</label>
+				<input type="password" class="login-field" value="" placeholder="パスワード" id="login-pass" name="password">
+			</div>
+			<div class="control-group">
+				<button class="btn">登録</button>
+			</div>
+			<div class="control-group link">
+				<a th:href="@{/account/login}" target="_blank">ログインがこちら</a>
+			</div>
+		</form>
+	</section>
+	<footer>
+		<div>
+			<small>Copyright© 2024 ichihann</small>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="./js/common.js"></script>
+</body>
+
+</html>

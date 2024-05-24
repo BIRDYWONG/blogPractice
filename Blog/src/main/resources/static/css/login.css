@@ -1,0 +1,61 @@
+body {
+	font-family: Arial;
+	background-color: white
+}
+
+
+h1 {
+	font-style: italic;
+	font-weight: 10px;
+	text-align: center;
+	color: #777;
+}
+
+.register-field-icon {
+	display: inline-block;
+	text-align: left;
+	width: 100px;
+}
+
+.control-group {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+input {
+	text-align: center;
+	background-color: #ecf0f1;
+	border: 2px solid transparent;
+	/*transparent是把边缘线取消的用法*/
+	border-radius: 3px;
+	font-size: 16px;
+	padding: 10px 0;
+	width: 250px;
+}
+
+
+.btn {
+	background-color: #ecf0f1;
+	border: 2px solid transparent;
+	color: rgb(112, 110, 110);
+	font-size: 16px;
+	width: 250px;
+	padding: 10px 0;
+	border-radius: 3px;
+	margin-top: 40px;
+}
+
+.register-link {
+	font-size: 12px;
+	color: #444;
+	display: block;
+	margin-top: 12px;
+}
+
+.pc-logo {
+	width: 140px;
+}
+
+.pc-logo a img {
+	width: 100%;
+}

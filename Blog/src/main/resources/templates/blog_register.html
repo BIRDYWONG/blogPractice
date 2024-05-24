@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BlogPage</title>
+	<link rel="stylesheet" th:href="@{/css/reset.css}">
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+	<header>
+		<!--スマートフォン-->
+		<nav class="menu">
+			<div class="logo">
+				<a href="#"><img th:src="@{/images/blog.png}" alt="Blog Logo"></a>
+			</div>
+			<div class="menu-contents">
+				<div class="menu-inner">
+					<ul>
+						<li class="menu__item"></li>
+						<li class="menu__item"><a href="#">ブログ記事一覧</a></li>
+					</ul>
+				</div>
+				<div class="menu-toggle_btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</nav>
+		<!--pc-->
+		<nav class="pc">
+			<div class="pc-inner">
+				<ul class="pc-list">
+					<li class="pc-list__item" th:text="${accountName}"></li>
+					<li class="pc-list__item"><a th:href="@{/blog/list}">ホームページ</a></li>
+					<li class="pc-list__item"><a th:href="@{/blog/list}">記事一覧</a></li>
+					<li class="pc-list__item"><a th:href="@{/account/login}">ログイン</a></li>
+					<li class="pc-list__item"><a th:href="@{/account/logout}">ログアウト</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="main-inner">
+			<section class="register-section">
+				<h2>ブローグ登録画面</h2>
+				<form th:action="@{/blog/register/process}" method="post" enctype="multipart/form-data">
+					<div class="register-section-details">
+						<div class="register-section-details_flex">
+							<div>タイトル</div>
+							<input type="text" name="blogTitle" id="blogTitle">
+						</div>
+						<!-- <div class="register-section-details_flex">
+                            <div>日付</div>
+                            <input type="date" name="date" id="date">
+                        </div>-->
+						<div class="register-section-details_flex">
+							<div>カテゴリー</div>
+							<select name="categoryName">
+								<option value="">選択してください</option>
+								<option value="日記">日記</option>
+								<option value="論評">論評</option>
+								<option value="文章">文章</option>
+							</select>
+						</div>
+						<div class="register-section-details_flex">
+							<div>画像</div>
+							<input type="file" name="blogImage">
+						</div>
+						<div class="register-section-details_flex">
+							<div>詳細</div>
+							<textarea name="article" placeholder="何か記録したいの"></textarea>
+						</div>
+					</div>
+					<div class="register-section-details_flex">
+						<button class="register" type="submit">登録</button>
+						<button class="back-btn" onclick="history.back();" type="button">戻る</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<div>
+			<small>Copyright© 2024 ichihann</small>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="./js/common.js"></script>
+</body>
+
+</html>
